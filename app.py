@@ -1,20 +1,19 @@
 import streamlit as st
+
 from src.config.settings import (
     APP_NAME,
     APP_ICON,
     APP_DESCRIPTION
 )
+from src.components.header import render_header
+
 st.set_page_config(
     page_title=APP_NAME,
     page_icon=APP_ICON,
     layout="wide"
 )
 
-st.title(f"{APP_ICON} {APP_NAME}")
-
-st.caption(APP_DESCRIPTION)
-
-st.divider()
+render_header()
 
 st.header("Mission Control")
 
