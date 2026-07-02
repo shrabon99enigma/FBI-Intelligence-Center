@@ -1,14 +1,18 @@
 import streamlit as st
-
+from src.config.settings import (
+    APP_NAME,
+    APP_ICON,
+    APP_DESCRIPTION
+)
 st.set_page_config(
-    page_title="FBI Intelligence Center",
-    page_icon="🛰️",
+    page_title=APP_NAME,
+    page_icon=APP_ICON,
     layout="wide"
 )
 
-st.title("🛰️ FBI Intelligence Center")
+st.title(f"{APP_ICON} {APP_NAME}")
 
-st.caption("Professional OSINT • Cyber Intelligence • Investigation Platform")
+st.caption(APP_DESCRIPTION)
 
 st.divider()
 
