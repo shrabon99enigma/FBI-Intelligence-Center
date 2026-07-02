@@ -1,4 +1,5 @@
 import streamlit as st
+from src.components.mission import render_mission
 
 from src.config.settings import (
     APP_NAME,
@@ -16,17 +17,7 @@ st.set_page_config(
 render_sidebar()
 render_header()
 
-st.header("Mission Control")
-
-st.write(
-    """
-Welcome to the FBI Intelligence Center.
-
-This project is being built to learn professional Python development,
-Streamlit, Git, GitHub, OSINT, automation, and software engineering
-through a real-world application.
-"""
-)
+render_mission()
 
 st.info("Project Status: Under Development")
 st.divider()
