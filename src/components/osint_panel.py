@@ -24,6 +24,12 @@ def render_osint_panel():
 
     if st.button("Run Intelligence"):
 
+        if not target.strip():
+
+            st.error("Please enter a target.")
+
+            return
+
         result = run_scan(target, scan_type)
 
         st.success("Target Received Successfully.")
