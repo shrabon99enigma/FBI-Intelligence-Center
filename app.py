@@ -6,13 +6,14 @@ from src.config.settings import (
     APP_DESCRIPTION
 )
 from src.components.header import render_header
+from src.components.sidebar import render_sidebar
 
 st.set_page_config(
     page_title=APP_NAME,
     page_icon=APP_ICON,
     layout="wide"
 )
-
+render_sidebar()
 render_header()
 
 st.header("Mission Control")
