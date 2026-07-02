@@ -25,3 +25,9 @@ through a real-world application.
 )
 
 st.info("Project Status: Under Development")
+st.divider()
+
+st.header("Operations")
+
+if st.button("Start Scan"):
+    st.success("Scan Started Successfully.")
